@@ -218,7 +218,7 @@ const HomePage = ({ onOpenBooking }) => {
       {/* 6. Shagun Banquet Hall */}
       <section className="section-padding" style={{ background: 'var(--bg-secondary)' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }}>
+          <div className="banquet-layout" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }}>
             <div>
               <span className="section-subtitle">WEDDINGS & CELEBRATIONS</span>
               <h2 className="section-title">Shagun Banquet Hall (150+ Guests)</h2>

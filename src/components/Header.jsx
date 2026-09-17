@@ -14,7 +14,7 @@ const Header = ({ onOpenBooking }) => {
       <div className="container">
         <div className="nav-container" style={{ gap: '1.5rem' }}>
           {/* Brand Logo - Hotel Kedar Hill Image Emblem */}
-          <Link to="/" className="brand-logo" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }}>
+          <Link to="/" className="brand-logo header-brand" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }}>
             <img
               src={hotelDetails.logoImage}
               alt="Hotel Kedar Hill Logo"
@@ -25,7 +25,7 @@ const Header = ({ onOpenBooking }) => {
                 filter: 'drop-shadow(0 0 6px rgba(212,175,55,0.4))',
               }}
             />
-            <div style={{ display: 'flex', flexDirection: 'column', whiteSpace: 'nowrap' }}>
+            <div className="brand-copy" style={{ display: 'flex', flexDirection: 'column', whiteSpace: 'nowrap' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', lineHeight: '1.1' }}>
                 <span className="brand-name" style={{ fontSize: '1.3rem', letterSpacing: '0.04em', fontWeight: '700' }}>
                   HOTEL KEDAR HILL
@@ -105,12 +105,12 @@ const Header = ({ onOpenBooking }) => {
           </nav>
 
           {/* Action Buttons */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginLeft: 'auto', flexShrink: 0 }}>
+          <div className="header-actions" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginLeft: 'auto', flexShrink: 0 }}>
             <a
               href={hotelDetails.instagram}
               target="_blank"
               rel="noreferrer"
-              className="btn btn-outline-gold"
+              className="btn btn-outline-gold social-button"
               style={{ padding: '0.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
               title="Follow @kedarhill.hotel on Instagram"
             >
@@ -119,7 +119,7 @@ const Header = ({ onOpenBooking }) => {
 
             <a
               href="tel:+918235758333"
-              className="btn btn-outline-gold"
+              className="btn btn-outline-gold contact-button"
               style={{ padding: '0.5rem 0.9rem', fontSize: '0.85rem', whiteSpace: 'nowrap' }}
               title="Call +91 82357 58333"
             >
@@ -127,7 +127,7 @@ const Header = ({ onOpenBooking }) => {
               <span>Contact Now</span>
             </a>
 
-            <button onClick={onOpenBooking} className="btn btn-gold" style={{ padding: '0.5rem 1rem', fontSize: '0.85rem', whiteSpace: 'nowrap' }}>
+            <button onClick={onOpenBooking} className="btn btn-gold booking-button" style={{ padding: '0.5rem 1rem', fontSize: '0.85rem', whiteSpace: 'nowrap' }}>
               <Calendar size={18} />
               <span>Book Room</span>
             </button>

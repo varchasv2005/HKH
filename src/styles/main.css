@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  min-width: 0;
 }
 
 html {
@@ -88,6 +89,7 @@ button, input, select, textarea {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  width: 100%;
 }
 
 /* Buttons */
@@ -248,6 +250,77 @@ button, input, select, textarea {
 
   .mobile-toggle {
     display: block;
+  }
+}
+
+/* Phone layout: keep the sticky header within the viewport and use the menu
+   for navigation instead of forcing desktop actions into a narrow screen. */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .nav-container {
+    height: 66px;
+    gap: 0.5rem !important;
+  }
+
+  .header-brand img {
+    height: 42px !important;
+  }
+
+  .brand-copy,
+  .social-button,
+  .contact-button {
+    display: none !important;
+  }
+
+  .header-actions {
+    gap: 0.5rem !important;
+  }
+
+  .booking-button {
+    padding: 0.5rem 0.7rem !important;
+    font-size: 0.75rem !important;
+  }
+
+  .booking-button svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .mobile-toggle {
+    padding: 0.25rem;
+    line-height: 1;
+  }
+
+  .nav-links {
+    top: 66px;
+    padding: 1.25rem;
+  }
+
+  .rooms-grid,
+  .outlets-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .banquet-layout {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .section-padding {
+    padding: 4rem 0;
+  }
+
+  .hero-section {
+    min-height: 76vh;
+    padding: 3rem 1rem 6rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
   }
 }
 
