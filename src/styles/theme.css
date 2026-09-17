@@ -1,0 +1,45 @@
+/* Luxury Hotel Design Tokens & Theme Variables */
+:root {
+  /* Color Palette - Royal Navy & Gold Luxury */
+  --bg-primary: #0a0e17;
+  --bg-secondary: #121926;
+  --bg-card: rgba(23, 31, 46, 0.75);
+  --bg-card-hover: rgba(30, 41, 61, 0.9);
+  --bg-light: #f9f8f6;
+  --bg-light-card: #ffffff;
+  
+  --gold-primary: #d4af37;
+  --gold-hover: #e5c158;
+  --gold-gradient: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+  --gold-soft: rgba(212, 175, 55, 0.15);
+  --gold-border: rgba(212, 175, 55, 0.35);
+
+  --text-white: #ffffff;
+  --text-primary: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dark: #1e293b;
+  --text-dark-muted: #64748b;
+
+  --accent-red: #e63946;
+  --accent-green: #10b981;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Shadows & Glassmorphism */
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+  --shadow-gold: 0 10px 30px -5px rgba(212, 175, 55, 0.25);
+
+  --glass-bg: rgba(15, 23, 42, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --backdrop-blur: blur(16px);
+
+  /* Transitions & Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

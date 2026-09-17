@@ -1,0 +1,266 @@
+// Database data store for Hotel Kedar Hill (HKH)
+
+export const hotelDetails = {
+  name: "Hotel Kedar Hill",
+  codeName: "HKH",
+  tagline: "Luxury With Comfort",
+  taglineSub: "Dhanbad's Premier Destination for Elegant Stays, Zenith Rooftop & Closed Dining, and Shagun Banquet",
+  since: "2025",
+  totalRooms: 18,
+  phone: "+91 82357 58333",
+  whatsapp: "+91 82357 58333",
+  email: "kedarhill.reception@gmail.com",
+  instagram: "https://www.instagram.com/kedarhill.hotel?stkn=aWs0aG1oYzFzYXg3",
+  address: "Kedar Hill Road, Near Ozone Galleria, Dhanbad, Jharkhand 828127",
+  stars: 5,
+  checkInTime: "12:00 PM",
+  checkOutTime: "11:00 AM",
+  currency: "INR",
+  currencySymbol: "₹",
+  popularAmenities: [
+    "Butler Services",
+    "Room Service",
+    "Lounge",
+    "Smoking Rooms",
+    "Air Conditioning",
+    "Power Backup",
+  ],
+};
+
+export const roomCategories = [
+  {
+    id: "deluxe-room-ac",
+    title: "Deluxe Room - AC",
+    subtitle: "Cozy & Sophisticated Comfort for Business & Short Stays",
+    price: 1630,
+    originalPrice: 2200,
+    size: "130 sq. ft.",
+    capacity: "2 Adults",
+    bedType: "Comfort King Bed",
+    image: "/assets/room_deluxe.jpg",
+    gallery: ["/assets/room_deluxe.jpg", "/assets/hotel_hero.png"],
+    description: "Our Deluxe AC Room features modern wooden decor, split air conditioning, plush bedding, high-speed Wi-Fi, 100% power backup, and round-the-clock room service.",
+    amenities: [
+      "Air Conditioning",
+      "Room Service",
+      "Power Backup",
+      "Butler Services",
+      "High-speed Wi-Fi",
+      "32-inch Smart TV",
+      "Ensuite Bathroom",
+    ],
+    popular: false,
+  },
+  {
+    id: "premium-room-ac",
+    title: "Premium Room - AC",
+    subtitle: "Enhanced Luxury with Executive Work Desk & City Views",
+    price: 2445,
+    originalPrice: 3200,
+    size: "140 sq. ft.",
+    capacity: "2 Adults, 1 Child",
+    bedType: "Super King Bed",
+    image: "/assets/room_premium.jpg",
+    gallery: ["/assets/room_premium.jpg", "/assets/rooftop_bar.png"],
+    description: "Designed for travelers who appreciate refined space. Offers premium linen, individual climate control, complimentary breakfast, and dedicated butler assistance.",
+    amenities: [
+      "Air Conditioning",
+      "Butler Services",
+      "Room Service",
+      "Lounge Access",
+      "Power Backup",
+      "43-inch Smart TV",
+      "Tea/Coffee Maker",
+    ],
+    popular: true,
+  },
+  {
+    id: "family-club-room-ac",
+    title: "Family Club Room - AC",
+    subtitle: "Spacious Living for Families & Group Celebrations",
+    price: 3105,
+    originalPrice: 3900,
+    size: "150 sq. ft.",
+    capacity: "4 Adults / Family",
+    bedType: "Double King Beds",
+    image: "/assets/room_family.jpg",
+    gallery: ["/assets/room_family.jpg", "/assets/fine_dining.png"],
+    description: "Spacious Family Club AC room accommodating up to 4 guests. Equipped with dual plush bedding, smoking options, 24/7 power backup, and in-room dining services.",
+    amenities: [
+      "Air Conditioning",
+      "Smoking Rooms Available",
+      "Room Service",
+      "Lounge Access",
+      "Power Backup",
+      "Butler Services",
+      "Dual Smart TV Setup",
+    ],
+    popular: false,
+  },
+  {
+    id: "presidential-suite-ac",
+    title: "Presidential Suite with Bathtub - AC",
+    subtitle: "The Pinnacle of Opulence with Deep Soaking Jacuzzi Bathtub",
+    price: 3260,
+    originalPrice: 4500,
+    size: "200 sq. ft.",
+    capacity: "2 Adults (VIP)",
+    bedType: "Royal Emperor Bed",
+    image: "/assets/room_presidential.jpg",
+    gallery: ["/assets/room_presidential.jpg", "/assets/fine_dining.png"],
+    description: "Hotel Kedar Hill's finest accommodation featuring a private marble bathroom with a luxury soaking bathtub, premium toiletries, personalized butler service, and complimentary lounge access.",
+    amenities: [
+      "Luxury Bathtub & Jacuzzi",
+      "Air Conditioning",
+      "Butler Services",
+      "Private Lounge Access",
+      "Power Backup",
+      "Room Service",
+      "55-inch OLED TV",
+      "Minibar & Express Check-In",
+    ],
+    popular: true,
+  },
+];
+
+export const diningOutlets = [
+  {
+    id: "zenith-closed",
+    name: "Zenith (Closed Dining Experience)",
+    type: "Fine Dining Closed AC Restaurant",
+    timing: "07:00 AM - 11:00 PM",
+    cuisine: "Authentic North Indian, Chinese, Continental & Tandoori",
+    image: "/assets/zenith_closed.jpg",
+    description: "Zenith's closed air-conditioned restaurant offers a serene, luxurious indoor dining environment with plush teal booth seating, warm ambient lighting, and chef specialty menus.",
+    highlights: ["Air-Conditioned Comfort", "Teal Booth Seating", "Chef's Signature Thalis", "Family Dining Sections"],
+  },
+  {
+    id: "zenith-rooftop",
+    name: "Zenith (Rooftop Experience)",
+    type: "Open-Air Rooftop Dining & Bar Outlet",
+    timing: "05:00 PM - 12:00 AM",
+    cuisine: "Sizzlers, Charcoal Kebabs, Craft Mocktails & Spirits",
+    image: "/assets/zenith_rooftop.jpg",
+    description: "Experience sky-high hospitality at Zenith Rooftop Bar. Enjoy candlelit open-air tables, comfortable wicker lounge seating, breathtaking city views of Kedar Hill, and live charcoal grills.",
+    highlights: ["Open-Air Rooftop Terrace", "Wicker Lounge Seating", "Charcoal Grill Kebabs", "Ambient Starlight Dining"],
+  },
+];
+
+export const eventSpaces = [
+  {
+    id: "shagun-banquet",
+    name: "Shagun Banquet Hall",
+    capacity: "150+ Guests",
+    area: "3,200 sq. ft.",
+    type: "Weddings, Sangeet, Receptions & Corporate Galas",
+    image: "/assets/banquet_hall.jpg",
+    description: "Shagun Banquet Hall is Hotel Kedar Hill's premier venue for grand celebrations. Equipped with crystal chandeliers, acoustic sound system, full air-conditioning, and 100% power backup.",
+    highlights: [
+      "150+ Guests Capacity",
+      "Full Air-Conditioning & 100% Power Backup",
+      "Stage & Acoustic Audio Setup",
+      "Bridal Suite & Custom Gourmet Catering",
+    ],
+  },
+];
+
+export const guestReviews = [
+  {
+    id: "1",
+    name: "Rajiv Malhotra",
+    role: "Family Vacationer",
+    rating: 5,
+    comment: "Stayed in the Presidential Suite with Bathtub at Hotel Kedar Hill. The bathtub experience and butler service were top-tier! Great food at Zenith rooftop.",
+    date: "August 2026",
+  },
+  {
+    id: "2",
+    name: "Pooja & Sameer",
+    role: "Wedding Hosts",
+    rating: 5,
+    comment: "We hosted our engagement ceremony at Shagun Banquet Hall (150+ guests). The management took care of everything seamlessly. Highly recommended!",
+    date: "July 2026",
+  },
+  {
+    id: "3",
+    name: "Amitabh Sen",
+    role: "Business Traveler",
+    rating: 5,
+    comment: "Excellent AC Deluxe rooms, 100% power backup, and Zenith restaurant's tandoori food is fantastic. Great location in Dhanbad.",
+    date: "September 2026",
+  },
+];
+
+// In-memory collections with total inventory tracking & sample active/past bookings
+export const roomCategoriesWithInventory = roomCategories.map(r => {
+  let qty = 6;
+  if (r.id === 'family-club-room-ac') qty = 4;
+  if (r.id === 'presidential-suite-ac') qty = 2;
+  return { ...r, totalQuantity: qty };
+});
+
+const todayObj = new Date();
+const formatDateStr = (d) => d.toISOString().split('T')[0];
+const todayStr = formatDateStr(todayObj);
+const nextWeekStr = formatDateStr(new Date(Date.now() + 7 * 86400000));
+const pastWeekStr = formatDateStr(new Date(Date.now() - 7 * 86400000));
+
+export const bookingsStore = [
+  {
+    id: "BK-9001",
+    referenceCode: "SONO-HIST1",
+    guestName: "Vikram Malhotra",
+    email: "vikram@example.com",
+    phone: "+91 98765 11111",
+    roomId: "deluxe-room-ac",
+    roomTitle: "Deluxe Room - AC",
+    checkIn: pastWeekStr,
+    checkOut: pastWeekStr,
+    nights: 2,
+    guests: 2,
+    totalPrice: 3260,
+    specialRequests: "Completed stay",
+    status: "Completed / Checked Out",
+    paymentStatus: "Paid",
+    createdAt: new Date(Date.now() - 10 * 86400000).toISOString(),
+  },
+];
+
+// Helper: Auto-update past bookings to 'Completed / Checked Out' based on history
+export const autoUpdateCheckouts = () => {
+  const currentToday = formatDateStr(new Date());
+  bookingsStore.forEach((b) => {
+    if (b.status === 'Confirmed' && b.checkOut <= currentToday) {
+      b.status = 'Completed / Checked Out';
+      b.freedAt = new Date().toISOString();
+    }
+  });
+};
+
+// Helper: Calculate dynamic room availability for specified dates
+export const getRoomAvailability = (roomId, checkInDate, checkOutDate) => {
+  autoUpdateCheckouts();
+  const room = roomCategoriesWithInventory.find((r) => r.id === roomId);
+  if (!room) return { totalQuantity: 0, bookedCount: 0, availableCount: 0, isAvailable: false };
+
+  const activeBookings = bookingsStore.filter((b) => {
+    if (b.roomId !== roomId) return false;
+    if (b.status !== 'Confirmed') return false;
+    // Overlap condition: booking.checkIn < request.checkOut && booking.checkOut > request.checkIn
+    return b.checkIn < checkOutDate && b.checkOut > checkInDate;
+  });
+
+  const bookedCount = activeBookings.length;
+  const availableCount = Math.max(0, room.totalQuantity - bookedCount);
+
+  return {
+    totalQuantity: room.totalQuantity,
+    bookedCount,
+    availableCount,
+    isAvailable: availableCount > 0,
+  };
+};
+
+export const tableReservationsStore = [];
+export const eventInquiriesStore = [];
+
