@@ -50,7 +50,12 @@ const HomePage = ({ onOpenBooking }) => {
   return (
     <div>
       {/* 1. Hero Section */}
-      <section className="hero-section">
+      <section
+        className="hero-section"
+        style={{
+          backgroundImage: `linear-gradient(180deg, rgba(10, 14, 23, 0.4) 0%, rgba(10, 14, 23, 0.85) 100%), url(${defaultRooms[0].gallery[1]})`,
+        }}
+      >
         <div className="hero-content">
           <span className="section-subtitle">HOTEL KEDAR HILL • SINCE 2025</span>
           <h1 className="hero-title">
@@ -247,7 +252,7 @@ const HomePage = ({ onOpenBooking }) => {
 
             <div>
               <img
-                src="/assets/banquet_hall.jpg"
+                src={events[0]?.image}
                 alt="Shagun Banquet Hall"
                 style={{ width: '100%', borderRadius: 'var(--radius-lg)', border: '1px solid var(--gold-border)', boxShadow: 'var(--shadow-lg)' }}
               />

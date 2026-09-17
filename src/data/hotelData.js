@@ -1,4 +1,7 @@
 // Shared Frontend & Backend Hotel Kedar Hill (HKH) Data Source
+// Vite substitutes BASE_URL with the repository path on GitHub Pages.
+// Keeping assets relative to it makes the app work both locally and at /HKH/.
+const asset = (file) => `${import.meta.env.BASE_URL}assets/${file}`;
 
 export const hotelDetails = {
   name: "Hotel Kedar Hill",
@@ -17,7 +20,7 @@ export const hotelDetails = {
   checkOutTime: "11:00 AM",
   currency: "INR",
   currencySymbol: "₹",
-  logoImage: "/assets/hkh_logo.png",
+  logoImage: asset("hkh_logo.png"),
   popularAmenities: [
     "Butler Services",
     "Room Service",
@@ -38,8 +41,8 @@ export const roomCategories = [
     size: "130 sq. ft.",
     capacity: "2 Adults",
     bedType: "Comfort King Bed",
-    image: "/assets/room_deluxe.jpg",
-    gallery: ["/assets/room_deluxe.jpg", "/assets/hotel_hero.png"],
+    image: asset("room_deluxe.jpg"),
+    gallery: [asset("room_deluxe.jpg"), asset("hotel_hero.png")],
     description: "Our Deluxe AC Room features modern wooden decor, split air conditioning, plush bedding, high-speed Wi-Fi, 100% power backup, and round-the-clock room service.",
     amenities: [
       "Air Conditioning",
@@ -61,8 +64,8 @@ export const roomCategories = [
     size: "140 sq. ft.",
     capacity: "2 Adults, 1 Child",
     bedType: "Super King Bed",
-    image: "/assets/room_premium.jpg",
-    gallery: ["/assets/room_premium.jpg", "/assets/rooftop_bar.png"],
+    image: asset("room_premium.jpg"),
+    gallery: [asset("room_premium.jpg"), asset("rooftop_bar.png")],
     description: "Designed for travelers who appreciate refined space. Offers premium linen, individual climate control, complimentary breakfast, and dedicated butler assistance.",
     amenities: [
       "Air Conditioning",
@@ -84,8 +87,8 @@ export const roomCategories = [
     size: "150 sq. ft.",
     capacity: "4 Adults / Family",
     bedType: "Double King Beds",
-    image: "/assets/room_family.jpg",
-    gallery: ["/assets/room_family.jpg", "/assets/fine_dining.png"],
+    image: asset("room_family.jpg"),
+    gallery: [asset("room_family.jpg"), asset("fine_dining.png")],
     description: "Spacious Family Club AC room accommodating up to 4 guests. Equipped with dual plush bedding, smoking options, 24/7 power backup, and in-room dining services.",
     amenities: [
       "Air Conditioning",
@@ -107,8 +110,8 @@ export const roomCategories = [
     size: "200 sq. ft.",
     capacity: "2 Adults (VIP)",
     bedType: "Royal Emperor Bed",
-    image: "/assets/room_presidential.jpg",
-    gallery: ["/assets/room_presidential.jpg", "/assets/fine_dining.png"],
+    image: asset("room_presidential.jpg"),
+    gallery: [asset("room_presidential.jpg"), asset("fine_dining.png")],
     description: "Hotel Kedar Hill's finest accommodation featuring a private marble bathroom with a luxury soaking bathtub, premium toiletries, personalized butler service, and complimentary lounge access.",
     amenities: [
       "Luxury Bathtub & Jacuzzi",
@@ -131,7 +134,7 @@ export const diningOutlets = [
     type: "Fine Dining Closed AC Restaurant",
     timing: "07:00 AM - 11:00 PM",
     cuisine: "Authentic North Indian, Chinese, Continental & Tandoori",
-    image: "/assets/zenith_closed.jpg",
+    image: asset("zenith_closed.jpg"),
     description: "Zenith's closed air-conditioned restaurant offers a serene, luxurious indoor dining environment with plush teal booth seating, warm ambient lighting, and chef specialty menus.",
     highlights: ["Air-Conditioned Comfort", "Teal Booth Seating", "Chef's Signature Thalis", "Family Dining Sections"],
   },
@@ -141,7 +144,7 @@ export const diningOutlets = [
     type: "Open-Air Rooftop Dining & Bar Outlet",
     timing: "05:00 PM - 12:00 AM",
     cuisine: "Sizzlers, Charcoal Kebabs, Craft Mocktails & Spirits",
-    image: "/assets/zenith_rooftop.jpg",
+    image: asset("zenith_rooftop.jpg"),
     description: "Experience sky-high hospitality at Zenith Rooftop Bar. Enjoy candlelit open-air tables, comfortable wicker lounge seating, breathtaking city views of Kedar Hill, and live charcoal grills.",
     highlights: ["Open-Air Rooftop Terrace", "Wicker Lounge Seating", "Charcoal Grill Kebabs", "Ambient Starlight Dining"],
   },
@@ -154,7 +157,7 @@ export const eventSpaces = [
     capacity: "150+ Guests",
     area: "3,200 sq. ft.",
     type: "Weddings, Sangeet, Receptions & Corporate Galas",
-    image: "/assets/banquet_hall.jpg",
+    image: asset("banquet_hall.jpg"),
     description: "Shagun Banquet Hall is Hotel Kedar Hill's premier venue for grand celebrations. Equipped with crystal chandeliers, acoustic sound system, full air-conditioning, and 100% power backup.",
     highlights: [
       "150+ Guests Capacity",

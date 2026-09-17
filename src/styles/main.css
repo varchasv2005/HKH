@@ -258,8 +258,9 @@ button, input, select, textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, rgba(10, 14, 23, 0.4) 0%, rgba(10, 14, 23, 0.85) 100%),
-              url('/assets/hotel_hero.png') center/cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 4rem 1rem 8rem 1rem;
 }
 
